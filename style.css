@@ -1,0 +1,341 @@
+body {
+
+background-size: cover;
+
+.banner {
+		position: relative;
+		background-color: gray;
+		text-align: center;
+		padding: 10px;
+		border-radius: 30px;
+		border: 5px solid #233333;
+}
+
+.banner-image {
+		max-width: 100%;
+		height: auto;
+		border-radius: 40% 10px;
+		border: 5px solid #233333;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.banner-text {
+    color: black;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: #233333;
+		padding: 10px 20px;
+		border-radius: 30px;
+}
+
+.menu {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+}
+
+.menu li {
+		margin: 0 15px;
+}
+
+.menu a {
+		color: white;
+		text-decoration: none;
+		font-size: 25px;
+}
+
+.menu a:hover {
+		text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    background-color: white; /* Tło dla całego kontenera */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opcjonalnie, dodanie cienia dla lepszego efektu */
+    padding: 30px; /* Opcjonalnie, dodanie wypełnienia dla całego kontenera */
+	margin: 50 auto;
+	border: 3px solid #233333;
+}
+
+.text {
+	font-size: 20px;
+    flex: 1;
+    background-color: #e0e0e0; /* Tło dla tekstu */
+    padding: 20px;
+    margin-right: 25px;
+	margin-left: 25px;
+    border-radius: 5px; /* Opcjonalnie, zaokrąglone rogi */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Opcjonalnie, dodanie cienia dla lepszego efektu */
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+	object-fit: cover;
+}	
+
+.podmenu {
+    text-align: center; /* Wycentrowanie tekstu */
+    color: white; /* Kolor tekstu */
+	background-color: #233333;
+	padding: 10px 20px;
+	border-radius: 30px;
+}
+
+p {
+    text-align: justify;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+	text-align: justify;	
+}
+
+.dist {
+	content: "";
+	display: block;
+	margin-bottom: 15px;
+}
+
+.frame {
+    border: 5px solid #333; /* Grubość i kolor ramki */
+    border-radius: 20px; /* Zaokrąglenie rogów ramki */
+    max-width: 100%; /* Maksymalna szerokość obrazka, aby dopasować do szerokości widoku */
+    display: block; /* Ustawienie obrazka jako elementu blokowego */
+    margin: 0 auto; /* Wyśrodkowanie obrazka na stronie */
+}
+
+td img {
+    display: block; /* Ustawienie obrazów jako blok, aby można było zastosować margin: auto; */
+    margin: auto; /* Wyśrodkowanie obrazów w komórkach */
+}
+	
+/****************************************************
+					*GALERIA*
+****************************************************/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.column {
+	display: flex;
+    flex: 30%; /* Zmniejszenie szerokości kolumn */
+	flex-direction: column;
+	align-items: center;
+    max-width: 40%; /* Zmniejszenie maksymalnej szerokości */
+    padding: 0 25px;
+    position: relative;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.column img {
+    height: auto;
+    max-width: 100%;
+    max-height: 300px;
+    margin-bottom: 20px;
+	border: 3px solid #233333;
+	align-items: center;
+}
+
+.caption {
+    position: absolute;
+	background-color: #233333;
+    bottom: 0; /* Ustawienie napisu na dole zdjęcia */
+    left: 20%;
+    width: 60%;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    box-sizing: border-box;
+	margin-bottom: 5px;
+	border: 3px solid #233333;
+	border-radius: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/****************************************************
+					*RASY*
+****************************************************/
+
+.cat-breed {
+    background-color: #eee;
+    padding: 50px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    max-width: 1000px;
+}
+
+.cat-breed img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.cat-breed table {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+}
+
+.cat-breed table th,
+.cat-breed table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.cat-breed p {
+    margin-top: 0;
+}
+
+.cat-title-text{
+	text-align: center;
+	font-size: 40px;
+	margin-top: -10px;
+}
+
+/****************************************************
+					*O KOTKACH*
+****************************************************/
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.question {
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.answer {
+    font-size: 1.1em;
+    line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.points {
+	margin-left: 25px;
+	font-size: 1em;
+    line-height: 1.6;
+	list-style-type: "\1F44D";	
+}
+
+.gif-container {
+    position: relative;
+}
+
+.animated-gif {
+	position: absolute;
+    top: 200px;
+    height: auto;
+}
+
+.left-gif {
+    left: 0;
+	transform: rotate(45deg);
+}
+
+.right-gif {
+    right: 0;
+	transform: rotate(-45deg);
+}
+
+/****************************************************
+					*OPIEKA*
+****************************************************/
+
+.hOp {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.sectionOp {
+    margin: 1em 2em;
+    background: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);   
+}
+
+.tableOp {
+    width: 100%;
+    border-collapse: separate;
+    margin-bottom: 1em; 
+    table-layout: fixed;
+	border-spacing: 5px;
+
+}
+
+.tableOp, .thOp, .tdOp {
+    border: 3px solid #ddd;   
+}
+
+.thOp, .tdOp {
+    padding: 0.75em;
+    text-align: center;
+    width: 25%;
+}
+
+.thOp {
+    background-color: #f4f4f4;  
+}
+
+.imgOp {
+    max-width: 150px;
+    height: auto;
+}
+}
